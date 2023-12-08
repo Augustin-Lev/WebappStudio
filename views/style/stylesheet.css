@@ -1,3 +1,101 @@
 html, body, head{
-    background-color: brown;
+    background-color: rgb(245, 245, 245);
+    height: 100vh;
+    width: 100vw;
+    margin : 0;
+    padding : 0;
+}
+.home-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.home-page>img{
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+}
+.boutton{
+    font-size: inherit;
+    margin : 1rem 0rem 1rem 0rem;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border-radius: 3px 3px;
+    
+    border: none;
+    text-align: center;
+    
+    color : white !important;
+    text-decoration: none !important;
+    background-color: rgb(168, 0, 0);
+    overflow: hidden;
+    
+    z-index: 1;
+    transition: 0.5s ;
+    transition-timing-function: linear;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer!important;
+}
+.presentation{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to top, rgba(245, 245, 245, 0)50%, rgba(245, 245, 245, 0.86)95%, rgb(245, 245, 245)), url("../image/appareilPhoto.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #000000;
+}
+.presentation>h2{
+    text-align: center;
+    width: 100%;
+}
+.presentation>p{
+    text-align: center;
+    width: 50%;
+    padding: 5%;
+}
+.indicators{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.indicators>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 10%;
+}
+.indicators>div>svg{
+    margin: 0;
+    padding: 0;
+    width: 30%;
+}
+.indicators>div>h4{
+    margin: 0;
+    padding: 0;
+}
+.indicators>div>p{
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.portfolio{
+    background-color: black;
+    color: white;
+}
+.portfolio>h2{
+    margin-top:0;
 }
