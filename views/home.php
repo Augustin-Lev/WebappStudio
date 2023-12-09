@@ -33,56 +33,82 @@
     </div>
 </div>
 <div class="portfolio">
-    <div>
+    <div class="portfolio-content">
         <h2>Portfolio</h2>
         <p><?php echo $Content["PortfolioParagraph"]; ?></p>
-        <a href="<?php echo BASE_URL ?>/login"> Voire les photos </a>
-        <a href="#Devis"> Obtenir un devis </a>
-    </div>
-    <div>
-        <img src="<?php echo BASE_URL ?>/views/image/photoPortfolio.jpg" alt="Photo de la com'studio">
+        <a class="boutton" href="<?php echo BASE_URL ?>/login"> Voire les photos </a>
+        <a class="boutton" href="#Devis"> Obtenir un devis </a>
     </div>
 </div>
-
+<div class="portfolio-photo">
+    <img src="<?php echo BASE_URL ?>/views/image/photoPortfolio.jpg" alt="image du portfolio">
+</div>
 <div class="serviceProcess">
     <h2><?php echo $Content["ServiceProcessTitle"]; ?></h2>
     <div>
         <div class="process">
             <div>
-                <svg></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+                    <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"/>
+                </svg>
                 <h2><?php echo $Content["ServiceProcess1Title"]; ?></h2>
             </div>
             <p><?php echo $Content["ServiceProcess1Paragraph"];?></p>
         </div>
         <div class="process">
             <div>
-                <svg></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-2-circle" viewBox="0 0 16 16">
+                    <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+                </svg>
                 <h2><?php echo $Content["ServiceProcess2Title"]; ?></h2>
             </div>
             <p><?php echo $Content["ServiceProcess2Paragraph"];?></p>
         </div>
         <div class="process">
             <div>
-                <svg></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-3-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-8.082.414c.92 0 1.535.54 1.541 1.318.012.791-.615 1.36-1.588 1.354-.861-.006-1.482-.469-1.54-1.066H5.104c.047 1.177 1.05 2.144 2.754 2.144 1.653 0 2.954-.937 2.93-2.396-.023-1.278-1.031-1.846-1.734-1.916v-.07c.597-.1 1.505-.739 1.482-1.876-.03-1.177-1.043-2.074-2.637-2.062-1.675.006-2.59.984-2.625 2.12h1.248c.036-.556.557-1.054 1.348-1.054.785 0 1.348.486 1.348 1.195.006.715-.563 1.237-1.342 1.237h-.838v1.072h.879Z"/>
+                </svg>
                 <h2><?php echo $Content["ServiceProcess3Title"]; ?></h2>
             </div>
             <p><?php echo $Content["ServiceProcess3Paragraph"];?></p>
         </div>
     </div>
 </div>
-<div class="Services">
+<div class="services">
+    <h2>Nos prestations</h2>
     <div>
-        <img src="" alt="">
+        <img src="<?php echo BASE_URL ?>/views/image/EtoileUnilasalle.png" alt="Etoile unilasalle">
         <h2><?php echo $Content["Service1Title"]; ?></h2>
         <p><?php echo $Content["Service1Paragraph1"]; ?></p>
         <p><?php echo $Content["Service1Paragraph2"]; ?></p>
         <p><?php echo $Content["Service1Paragraph3"]; ?></p>
         <p><?php echo $Content["Service1Paragraph4"]; ?></p>
         
-        <a href="#Devis">Obtenir un devis</a>
+        <a class="boutton" href="#Devis">Obtenir un devis</a>
+    </div>
+    <div>
+        <img src="<?php echo BASE_URL ?>/views/image/photoEntreprise.jpg" alt="Photo Entreprise">
+        <h2><?php echo $Content["Service2Title"]; ?></h2>
+        <p><?php echo $Content["Service2Paragraph1"]; ?></p>
+        <p><?php echo $Content["Service2Paragraph2"]; ?></p>
+        <p><?php echo $Content["Service2Paragraph3"]; ?></p>
+        <p><?php echo $Content["Service2Paragraph4"]; ?></p>
+        
+        <a class="boutton" href="#Devis">Obtenir un devis</a>
+    </div>
+    <div>
+        <img src="<?php echo BASE_URL ?>/views/image/photoAutre.jpg" alt="Photo Autre">
+        <h2><?php echo $Content["Service3Title"]; ?></h2>
+        <p><?php echo $Content["Service3Paragraph1"]; ?></p>
+        <p><?php echo $Content["Service3Paragraph2"]; ?></p>
+        <p><?php echo $Content["Service3Paragraph3"]; ?></p>
+        <p><?php echo $Content["Service3Paragraph4"]; ?></p>
+        
+        <a class="boutton" href="#Devis">Obtenir un devis</a>
     </div>
 </div>
-<div class="Devis" id="Devis">
+<div class="devis" id="Devis">
     <h2>Pour toutes questions : </h2>
     <p>Contactez <?php echo $Content["RespoPrestaNom"]; ?></p>
     <div>

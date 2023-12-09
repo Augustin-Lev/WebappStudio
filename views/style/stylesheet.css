@@ -5,6 +5,9 @@ html, body, head{
     margin : 0;
     padding : 0;
 }
+h2{
+    margin: 0;
+}
 .home-page{
     height: 100vh;
     display: flex;
@@ -20,6 +23,7 @@ html, body, head{
     padding: 0;
 }
 .boutton{
+    width: 70%;
     font-size: inherit;
     margin : 1rem 0rem 1rem 0rem;
     padding: 0.75rem 1rem 0.75rem 1rem;
@@ -96,6 +100,94 @@ html, body, head{
     background-color: black;
     color: white;
 }
-.portfolio>h2{
+.portfolio>div>h2{
     margin-top:0;
+}
+.portfolio>div>p{
+    margin: 10%;
+    text-align: justify;
+}
+.portfolio-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-photo{
+    height: 30vh;
+    overflow: hidden;
+    background-color: transparent;
+}
+.portfolio-photo>img{
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: -40%;
+    z-index: -1;
+}
+.serviceProcess{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serviceProcess>h2{
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+.process{
+    border: #000000 solid 1px;
+    margin : 10%;
+    padding : 5%;
+
+    overflow: hidden;
+}
+.process>div>svg{
+    fill: rgb(168, 0, 0);
+    height : 25px;
+}
+.process>div{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 5% 0 0 5%; */
+}
+.process>div>h2{
+    padding-left: 5%;
+}
+.services{
+    background-color: rgb(245, 245, 245);
+    padding: 10%;
+}
+.services>h2{
+    width: 100%;
+    text-align: center;
+}
+.services>div>h2{
+    width: 100%;
+    text-align: center;
+}
+.services>div{
+    padding: 10%;
+    margin-top: 10%;
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.services>div>img{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    margin: 0 20% 0 20%;
+}
+.services>div>p{
+    text-align: left;
+    width: 100%;
+}
+.devis{
+    background-color: rgb(245, 245, 245);
 }
