@@ -21,6 +21,7 @@ if (!file_exists('models/connect.csv')){
 require_once 'models/Router.php';
 require_once 'models/DataBase.php';
 require_once 'controllers/HomeController.php';
+require_once 'controllers/LoginController.php';
 
 
 
@@ -30,6 +31,8 @@ $router = new Router();
 //Définition des routes 
 $router->addRoute("GET",BASE_URL.'/','HomeController','index');
 $router->addRoute("POST",BASE_URL.'/','HomeController','index');
+$router->addRoute("GET",BASE_URL.'/login','LoginController','index');
+$router->addRoute("POST",BASE_URL.'/login','LoginController','index');
 $router->addRoute("GET",BASE_URL.'/initialisation','Init','index');
 
 
